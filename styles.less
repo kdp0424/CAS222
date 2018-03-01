@@ -1,0 +1,140 @@
+@import 'palette.less';
+@import 'mixins.less';
+
+/* MOBILE STYLESHEET */
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5%;
+        header {
+            background-color: @color1;
+            padding: 5%;
+            h1 {
+                .headerFontAttributes('Open Sans', sans-serif; @darkColor; 1.75em);
+                line-height: 1.5em;
+                padding: 1em;
+                text-align: center;
+                width: auto;
+            }
+        }
+        main {
+            background-color: @color1;
+            padding: 5%;
+            h2 {
+                .headerTwoFontAttributes('Open Sans', sans-serif; @darkColor; bold);
+            }
+                #intro {
+                    h3 {            
+                        color: @darkColor;
+                    }
+                    p {                 
+                        color: @darkColor;
+                    }
+                }
+            .form {               
+                background-color: @darkColor;
+                margin: 5%;
+                
+                #registrationForm {
+                    padding: 3%;
+                    color: @lightColor;
+                }
+                #contactForm {
+                    padding: 3%;
+                    color: @lightColor;
+                }
+            }        
+        }
+            footer {
+                background-color: @color1;
+                color: @lightColor;
+                padding: 5%;
+            }
+    }
+}
+
+/* TABLET STYLESHEET */
+
+@media only screen and (min-width: 481px) {
+    body {
+        padding: 5%;
+        header {
+            background-color: @color1;
+            padding: 5%;
+            h1 {
+                .headerFontAttributes('Open Sans', sans-serif; @lightColor; 1.75em);
+                padding: 1em;
+                line-height: 1.5em;
+                text-align: center;
+                width: auto;
+            }
+        }
+        main { 
+            background-color: @color1;
+            padding: 5%;
+            h2 {               
+                color: @lightColor;
+            }
+                #intro {
+                    h3 {                       
+                        color: @lightColor;
+                    }
+                    p {                   
+                        color: @lightColor;
+                    }
+                }
+            #form {            
+                margin: 5%;
+                background-color: @lightColor;
+            }
+        }
+            footer {
+                background-color: @color1;
+                padding: 5%;
+                color: @lightColor;
+            }
+    }
+}
+
+/* DESKTOP STYLESHEET */
+
+@media only screen and (min-width: 1025px) {
+    body {
+        padding: 5%;
+        header {
+            background-color: @color1;
+            padding: 5%;
+            h1 {
+                .headerFontAttributes('Open Sans', sans-serif; @lightColor; 1.75em);
+                padding: 1em;
+                line-height: 1.5em;
+                text-align: center;
+                width: auto;
+            }
+        }
+        main {          
+            background-color: @color1;
+            padding: 5%;
+            h2 {
+                color: @lightColor;
+            }
+                #intro {
+                    h3 {                      
+                        color: @lightColor;
+                    }
+                    p {   
+                        color: @lightColor;
+                    }
+                }
+            #form {
+                margin: 5%;
+                background-color: @lightColor;
+            }
+        }
+            footer {
+                background-color: @color1;
+                padding: 5%;
+                color: @lightColor;
+            }
+    }
+}

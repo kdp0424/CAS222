@@ -1,0 +1,200 @@
+<!DOCTYPE html> <!-- This tells the web browser that the page is an html document. -->
+
+<!--
+The information contained inside the <head> section below helps instruct the browser how to render the page.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ace in the Hole Multisport Events">
+    <meta name="keywords" content="Multisport Events,Ace in the Hole Multisport Events,Portland,Oregon">
+    <meta name="author" content="Kelli Pando">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace in the Hole Multusport Events</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/hamburger-menu.css" type="text/css">
+    
+    <script>
+        $( document ).ready(function() {
+
+            $( ".cross" ).hide();
+            $( ".menu" ).hide();
+            $( ".hamburger" ).click(function() {
+                $( ".menu" ).slideToggle( "slow", function() {
+                    $( ".hamburger" ).hide();
+                    $( ".cross" ).show();
+                });
+            });
+
+            $( ".cross" ).click(function() {
+                $( ".menu" ).slideToggle( "slow", function() {
+                    $( ".cross" ).hide();
+                    $( ".hamburger" ).show();
+                });
+            });
+
+        });
+    </script>
+</head>
+
+<!-- The <body> sections holds the content that will be displayed on the webpage -->
+<body>
+    <header>
+        <h1>Ace in the Hole Multisport Events</h1>
+    </header>
+    
+    <main>
+        <!-- This section is for social media icons -->
+        <section id="socialMedia">
+            <ul>
+                <li>Facebook icon</li>
+                <li>Twitter icon</li>
+            </ul>
+        </section>
+        
+        <!-- This is where the hamburger/navigation menu is located -->
+        <nav>
+            <div class="menu">
+                <ul>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Course Details</li></a>
+                    <a href="#"><li>Starting Times</li></a>
+                    <a href="#"><li>Register</li></a>
+                    <a href="#"><li>Packet Pickup</li></a>
+                </ul>
+            </div> 
+        </nav>
+        
+        <!-- This section is for the slideshow. Alternately, there may be a single image for the mobile version(s) -->
+        <section id="slideshow">
+            
+        </section>
+        
+        <!-- This section contains information about Ace in the Hole Multisport Events -->
+        <section>
+            <p>
+                Baseball ipsum dolor sit amet loss, batter's box hit by pitch shortstop chin music. Plate plate play ground rule double knuckle disabled list cardinals. Arm sacrifice bunt rip dodgers sacrifice bunt check swing reliever first baseman. No decision first base can of corn diamond strikeout balk scorecard catcher. Yankees 1-2-3 stadium defensive indifference tossed base crooked number pine tar. Tigers sweep balk 4-6-3 mitt slugging swing.
+            </p>
+        </section>
+        
+        <!-- This section contains the weather feed -->
+        <section id="weatherFeed">
+            <p>Weather Feed Goes Here</p>
+        </section>
+        
+        <!-- This section contains information about the annual event -->
+        <section>
+            <p>
+                Baseball ipsum dolor sit amet swing count, leadoff fan. Curve pickoff second baseman cracker jack baseball card third baseman line drive. Interleague fastball grounder league ground ball bandbox ball. Sacrifice fly no-hitter center field small ball base on balls glove bench steal all-star. Screwball mound pull full count rubber flyout world series. Pinch runner fall classic fastball small ball fielder's choice cycle bandbox center fielder.
+            </p>
+        </section>
+        
+        <!-- This section contains information about event starting times -->
+        <section>
+            <h2>Event Activity Starting Times</h2>
+
+            <table id="startingTimes">
+                <tr>
+                    <th>Table Header</th>
+                    <th>Table Header</th>
+                </tr>
+                <tr>
+                    <td>Row 1, column 1 text</td>
+                    <td>Raw 1, column 2 text</td>
+                </tr>
+                <tr>
+                    <td>Row 2, column 1 text</td>
+                    <td>Raw 2, column 2 text</td>
+                </tr>
+                <tr>
+                    <td>Row 3, column 1 text</td>
+                    <td>Row 3. column 2 text</td>
+                </tr>
+                <tr>
+                    <td>Row 4, column 1 text</td>
+                    <td>Row 4, column 2 text</td>
+                </tr>
+            </table>
+        </section>
+        
+        <!-- This section displays the registration form -->
+                
+        <section class="form">
+            <form id="registrationForm" name="input" method="POST" action="registration_add_action.php">
+                <p>Full Name: <input type="text" name="fullName"></p><br>
+                <p>Email: <input type="text" name="email"></p><br>
+                <p>Phone Number: <input type="text" name="phoneNumber"></p><br>
+                <p>Athlete or Volunteer:<br>
+                <p><input type="checkbox" name="role">Athlete</p><br>
+                <p><input type="checkbox" name="role">Volunteer</p><br>
+                <p>T-shirt Size:</p><br>
+                <p><input type="radio" name="tshirt">Extra Small (XS)</p><br>
+                <p><input type="radio" name="tshirt">Small (S)</p><br>
+                <p><input type="radio" name="tshirt">Medium (M)</p><br>
+                <p><input type="radio" name="tshirt">Large (L)</p><br>
+                <p><input type="radio" name="tshirt">Extra Large (XL)</p><br>
+                <p><input type="radio" name="tshirt">XXL</p><br>
+                <p><input type="radio" name="tshirt">XXXL</p><br>
+                <p><input type="radio" name="tshirt">XXXXL</p><br>
+                <p>Gender Identification:<br>
+                <input type="radio" name="gender" value="female">Female<br>
+                <input type="radio" name="gender" value="male">Male<br></p>
+                <input type="submit" value="Submit"><br>
+            </form>
+        </section>
+        
+        <!-- This section contains information about picking up packets -->
+        <section>
+            
+        </section>
+        
+        <!-- This is the FAQS section -->
+        <section>
+            <p>What are the Rules?
+            <br>
+            We currently adhere to the USAT Rules for Triathlon & Duathlon.  Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.
+            <br>
+            Can I use a personal music device while cycling?
+            <br>
+            Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.
+            <br>
+            Can I use a personal music device while running?
+            <br>
+            During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.
+            <br>
+            If you chose to use a personal music device, you must always keep one ear open for instructions so only one ear-bud can be used at any time. In addition, if you opt to use music, you will not be eligible for awards, points and rankings. So as an athlete, you have to make a choice…music or awards/points/rankings.
+            If you are using a personal music devise with two earbuds, you will be immediately disqualified. Trust us, we don’t want to have to enforce a disqualification but in order to assure the safety of all athletes, this is a very important rule.
+            We also request that if you chose to use a personal music device that you keep the volume to a minimum to assure all instructions can be heard.
+            <br>
+            Do I need to wear a wetsuit?
+            <br>
+            No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor. 
+            <br>
+            Do I have to use a road or racing bike?  No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
+        </section>
+        
+        <!-- This section contains information about contacting staff and includes a contact form -->
+        <section class="form">
+            <form id="contactForm" name="contact" method="post" action="contact.php">
+                <p>Full Name:* <input type="text" name="fullName"></p><br>
+                <p>Email:* <input type="text" name="email"></p><br>
+                <p>What best describes you? (please select the ones that apply):<br>
+                <p><input type="checkbox" name="role">Volunteer</p><br>
+                <p><input type="checkbox" name="role">Athlete</p><br>
+                <p><input type="checkbox" name="role">Interested Party</p><br>
+                <p>Questions or Comments?* <input type="textarea" rows="5" name="comments"></p><br>
+                <input type="submit" name="submit" value="Click to Send"><br>
+            </form>
+            <p>The * next to the field denotes required data.</p>
+        </section>
+        
+    </main>
+    
+    <!-- The footer contains a small copyright notice and repeats the social media icons -->
+    <footer>
+        <p>Copyright &copy; Ace in the Hole Multisport Events 2018</p>
+    </footer>
+    
+</body>
+
+</html>

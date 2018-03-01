@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- This tells the web browser that the page is an html document. -->
+
+<!--
+The information contained inside the <head> section below helps instruct the browser how to render the page.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ace in the Hole Multisport Events">
+    <meta name="keywords" content="Multisport Events,Ace in the Hole Multisport Events,Portland,Oregon">
+    <meta name="author" content="Kelli Pando">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15; url=contact.html">
+    <title>Ace in the Hole Multusport Events</title>
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/hamburger-menu.css" type="text/css">
+    
+    
+    <script>
+        $( document ).ready(function() {
+
+            $( ".cross" ).hide();
+            $( ".menu" ).hide();
+            $( ".hamburger" ).click(function() {
+                $( ".menu" ).slideToggle( "slow", function() {
+                    $( ".hamburger" ).hide();
+                    $( ".cross" ).show();
+                });
+            });
+
+            $( ".cross" ).click(function() {
+                $( ".menu" ).slideToggle( "slow", function() {
+                    $( ".cross" ).hide();
+                    $( ".hamburger" ).show();
+                });
+            });
+
+        });
+    </script>
+</head>
+
+<!-- The <body> sections holds the content that will be displayed on the webpage -->
+<body>
+    <header>
+        <h1>Ace in the Hole Multisport Events</h1>
+    </header>
+    
+    <main>
+        <!-- This section is for social media icons -->
+        <section id="socialMedia">
+            <ul>
+                <li>Facebook icon</li>
+                <li>Twitter icon</li>
+            </ul>
+        </section>
+        
+        <!-- This is where the hamburger/navigation menu is located -->
+        <nav>
+            <div class="menu">
+                <ul>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Course Details</li></a>
+                    <a href="#"><li>Starting Times</li></a>
+                    <a href="#"><li>Register</li></a>
+                    <a href="#"><li>Packet Pickup</li></a>
+                </ul>
+            </div> 
+        </nav>
+        
+        <section id="error">
+            <p>Your form was not submitted. Please check your entries and try again. You will be re-directed to the home page after 15 seconds. If nothing occurs, please navigate back to the home page from the navigation menu.</p>
+        </section>
+        
+    </main>
+    
+    <!-- The footer contains a small copyright notice and repeats the social media icons -->
+    <footer>
+        <p>Copyright &copy; Ace in the Hole Multisport Events 2018</p>
+    </footer>
+    
+</body>
+
+</html>

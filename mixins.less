@@ -1,0 +1,60 @@
+// out: null
+
+/*
+
+The code on this stylesheet are pre-coded, custom styles that can be applied to certain elements in the html structure.
+
+The arguments/parametrics contained in the parenthesis correspond to the properties within the brackets and when used in a stylesheet, the values typed in their place will feed into the properties without having to repeat the properties in the stylesheet.
+
+If a default value is used in one argument, there must be one for each one.
+
+Make sure arguments/parameters are named differently than any variables you have present in your documents. Otherwise your sheet will not compile.
+
+*/
+
+.headerFontAttributes(@textFamily; @textColor; @textSize) {
+    font-family: @textFamily;
+    color: @textColor;
+    font-size: @textSize;
+    font-weight: bold; // this uses no arguments... not everything has to be dynamic!
+    text-transform: uppercase;
+}
+
+.navBarAttributes(@textFamily; @textColor; @textSize; @borderColor) {
+    font-family: @textFamily;
+    color: @textColor;
+    font-size: @textSize;
+    border-bottom: 1px solid @borderColor;
+    border-top: 1px solid @borderColor;
+    background: -webkit-linear-gradient(@color6, @lightColor);
+    text-decoration: none;
+}
+
+.tabletNavBarAttributes(@textFamily; @textColor; @textSize) {
+    font-family: @textFamily;
+    color: @textColor;
+    font-size: @textSize;
+    background: -webkit-linear-gradient(@color6, @lightColor);
+    text-decoration: none;
+}
+
+.desktopNavBarAttributes(@textFamily; @textColor; @textSize) {
+    font-family: @textFamily;
+    color: @textColor;
+    font-size: @textSize;
+    background: -webkit-linear-gradient(@color6, @lightColor);
+    text-decoration: none;
+}
+
+.textAttributes(@textColor; @textFamily; @textSize; @lineHeight; @textWeight) {
+    color: @textColor;
+    font-family: @textFamily;
+    font-size: @textSize;
+    line-height: @lineHeight;
+    font-weight: @textWeight;
+}
+.headerTwoFontAttributes(@fontFamily: 'Georgia', sans-serif; @fontColor; @fontWeight;) {
+    font-family: @fontFamily;
+    color: @fontColor; 
+    font-weight: bold;
+}
