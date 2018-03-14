@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- This tells the web browser that the page is an html document. -->
+<html lang="en">
+
+<!--
+The information contained inside the <head> section below helps instruct the browser how to render the page.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ace in the Hole Multisport Events">
+    <meta name="keywords" content="Multisport Events,Ace in the Hole Multisport Events,Portland,Oregon">
+    <meta name="author" content="Kelli Pando">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace in the Hole Multusport Events</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/hamburger-menu.css" type="text/css">
+    <script src="js/hamburger.js"></script>
+</head>
+
+<!-- The <body> sections holds the content that will be displayed on the webpage -->
+<body>
+    <header>
+        <h1>Ace in the Hole Multisport Events</h1>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+    </header>
+    
+    <main>
+        <!-- This section displays the registration form -->
+                
+        <section class="form">
+            <h2 class="formHeader">REGISTER</h2><br>
+            <form id="registrationForm" name="input" method="POST" action="registration.php">
+                <p>Full Name: <input type="text" name="fullName"></p><br>
+                <p>Email: <input type="text" name="email"></p><br>
+                <p>Phone Number: <input type="text" name="phoneNumber"></p><br>
+                <p>Athlete or Volunteer:<br>
+                <p><input type="checkbox" name="athlete">Athlete</p><br>
+                <p><input type="checkbox" name="volunteer">Volunteer</p><br>
+                <p>T-shirt Size:</p><br>
+                <p><input type="radio" name="xsmall">Extra Small (XS)</p><br>
+                <p><input type="radio" name="small">Small (S)</p><br>
+                <p><input type="radio" name="medium">Medium (M)</p><br>
+                <p><input type="radio" name="large">Large (L)</p><br>
+                <p><input type="radio" name="xLarge">Extra Large (XL)</p><br>
+                <p><input type="radio" name="xxLarge">XXL</p><br>
+                <p><input type="radio" name="xxxLarge">XXXL</p><br>
+                <p><input type="radio" name="xxxxLarge">XXXXL</p><br>
+                <p>Gender Identification:<br>
+                <input type="radio" name="female" value="female">Female<br>
+                <input type="radio" name="male" value="male">Male<br>
+                <input type="radio" name="nonBinary" value="nonBinary">Non-Binary<br></p>
+                <input type="submit" value="Submit"><br>
+            </form>
+        </section>
+        
+        <!-- This section contains information about contacting staff and includes a contact form -->
+        <section class="form">
+            <h2 class="formHeader">CONTACT US:</h2><br>
+            <form id="contactForm" name="contact" method="post" action="contact2.php">
+                <p>Full Name:* <input type="text" name="fullName"></p><br>
+                <p>Email:* <input type="text" name="email"></p><br>
+                <p>What best describes you? (please select the ones that apply):<br>
+                <p><input type="radio" name="role">Volunteer</p><br>
+                <p><input type="radio" name="role">Athlete</p><br>
+                <p><input type="radio" name="role">Interested Party</p><br>
+                <p>Questions or Comments?* <input type="text" name="comments"></p><br>
+                <input type="submit" name="submit" value="Click to Send"><br>
+            </form>
+            
+            
+            <p>The * next to the field denotes required data.</p>
+        </section>
+        
+    </main>
+    
+    <!-- The footer contains a small copyright notice and repeats the social media icons -->
+    <footer>
+        <p>Copyright &copy; Ace in the Hole Multisport Events 2018</p>
+    </footer>
+    
+</body>
+
+</html>
